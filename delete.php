@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST["id"];
 
-    $sql = "DELETE FROM Pembersihan WHERE id = ?";
+    $sql = "DELETE FROM Pembersihan WHERE id_Laporan = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $id);
 

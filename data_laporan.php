@@ -28,6 +28,7 @@ if (!isset($_SESSION['login'])) {
 <th>Volume Sampah</th>
 <th>Jenis Sampah</th>
 <th>Petugas</th>
+<th>Gambar</th>
 </tr>
 </thead>
 

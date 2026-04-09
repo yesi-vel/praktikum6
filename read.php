@@ -12,6 +12,10 @@ while($row = $result->fetch_assoc()) {
     <td>{$row['Volume_Sampah']}</td>
     <td>{$row['Jenis_Sampah']}</td>
     <td>{$row['Petugas']}</td>
+    <td><img src='uploads/".$row['file']."' width='100'></td>
+    
+   
+
     </tr>";
 }
 ?>
