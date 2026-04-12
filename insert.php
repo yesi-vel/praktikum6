@@ -2,6 +2,10 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 include 'koneksi.php';
+include 'Laporan.php';
+
+$laporan = new Laporan($conn);
+$laporan->insert($_POST, $_FILES['fileToUpload']);
 
 $sektor  = $_POST['Lokasi_Sektor'];
 $tanggal = $_POST['Tanggal_Kegiatan'];
